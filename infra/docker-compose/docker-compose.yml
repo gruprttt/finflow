@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  node-api:
+    build: ../../services/node-api
+    ports:
+      - "3000:3000"
+    depends_on:
+      - go-service
+
+  go-service:
+    build: ../../services/go-service
+    ports:
+      - "8080:8080"
