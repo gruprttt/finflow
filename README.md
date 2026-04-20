@@ -1,6 +1,6 @@
-# 🚀 FinFlow — Distributed System with Observability (SRE Project)
+#  FinFlow — Distributed System with Observability (SRE Project)
 
-## 📌 Project Overview
+##  Project Overview
 
 FinFlow is a **microservices-based distributed system** built to simulate real-world backend architecture with **observability, caching, messaging, and monitoring**.
 
@@ -16,7 +16,7 @@ This project demonstrates **SRE concepts** like:
 
 ---
 
-## 🧠 Architecture
+##  Architecture
 
 ```
 User → Node API → Go Service → MySQL
@@ -53,9 +53,9 @@ Loki + Promtail → Logs
 
 ---
 
-## ⚙️ Features Implemented
+##  Features Implemented
 
-### ✅ Backend Features
+###  Backend Features
 
 * User creation API
 * Order creation API
@@ -63,7 +63,7 @@ Loki + Promtail → Logs
 * Redis caching for read optimization
 * Kafka event publishing (`order_created`)
 
-### ✅ Observability
+###  Observability
 
 * Prometheus metrics:
 
@@ -74,7 +74,7 @@ Loki + Promtail → Logs
 * Loki log aggregation
 * Promtail log collection
 
-### ✅ Performance Monitoring
+###  Performance Monitoring
 
 * Request latency tracking (Histogram)
 * Throughput tracking (Requests/sec)
@@ -82,7 +82,7 @@ Loki + Promtail → Logs
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 finflow/
@@ -104,9 +104,9 @@ finflow/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
-### 1️⃣ Clone Repository
+### 1️ Clone Repository
 
 ```bash
 git clone <your-repo-url>
@@ -115,7 +115,7 @@ cd finflow/infra/docker-compose
 
 ---
 
-### 2️⃣ Start System
+### 2️ Start System
 
 ```bash
 docker compose up --build -d
@@ -123,7 +123,7 @@ docker compose up --build -d
 
 ---
 
-### 3️⃣ Verify Services
+### 3️ Verify Services
 
 ```bash
 docker ps
@@ -131,9 +131,9 @@ docker ps
 
 ---
 
-## 🧪 API Testing
+##  API Testing
 
-### 🔹 Create User
+###  Create User
 
 ```bash
 curl -X POST http://localhost:3000/users \
@@ -170,7 +170,7 @@ curl http://localhost:3000/orders/1
 
 ---
 
-## 📊 Monitoring
+##  Monitoring
 
 ### 🔹 Prometheus
 
@@ -225,7 +225,7 @@ histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m]))
 
 ---
 
-## ⚠️ Known Limitations (Planned Improvements)
+##  Known Limitations (Planned Improvements)
 
 * DLQ (Dead Letter Queue) not implemented yet
 * No retry mechanism for Kafka failures
@@ -235,7 +235,7 @@ histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m]))
 
 ---
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 * [ ] Implement DLQ (Kafka failure handling)
 * [ ] Add retry with exponential backoff
@@ -247,7 +247,7 @@ histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m]))
 
 ---
 
-## 🎯 Learning Outcomes
+##  Learning Outcomes
 
 This project helped in understanding:
 
